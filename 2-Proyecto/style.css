@@ -23,6 +23,8 @@ body {
   flex-direction: column;
 
   transition: all 0.3s ease;
+
+  box-shadow: 3px 0 10px rgba(0,0,0,0.3), -4px 0 10px rgba(0,0,0,0.2),-5px 0 10px rgba(0,0,0,0.1);
 }
 
 .cards .card a {
@@ -42,4 +44,32 @@ body {
 .cards .card:hover {
   margin-right: 80px;
   transform: rotate(3deg) translateY(-15px);
+}
+
+.cards .card .header .date{
+  padding: 10px 0;
+}
+
+.cards .card .header .title{
+  font-size: 28px;
+}
+
+.cards .card .footer .autor a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cards .card .footer img{
+  width: 48px;
+  border-radius: 50%;
+}
+
+.cards .card[class*="element"]{
+  margin-left: -100px;
+}
+
+.element-2:hover, 
+.element-1:hover {
+  margin-left: -130px;
 }
